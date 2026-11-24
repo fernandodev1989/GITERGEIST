@@ -1,0 +1,18 @@
+@font-face {
+    font-family: "Old London";
+    src: url(../fonts/OldLondon.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    background: linear-gradient(135deg, #01205c, #051125, #19052f,#01205c, #051125, #200141);
+}
+
+h1 {
+    font-family: "Old London", "Helvetica", "sans-serif";
+    font-size: 70px;
+}
+
+img {
+    width: 300px;
+}
