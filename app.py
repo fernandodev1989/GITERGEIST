@@ -15,7 +15,7 @@ def abrir_terminal(repositorio):
 def commitar(hoje):
     auto.write('git add .')
     auto.press('enter')
-    auto.write(f'git commit -m "Commit do dia {hoje}"')
+    auto.write(f'git commit -m "Commit do dia= {hoje}"')
     auto.press('enter')
     auto.white('git push')
     auto.press('enter')
@@ -31,6 +31,7 @@ def index():
         repositorio = request.form.get('repositorio','')
         auto.PAUSE = 1
         abrir_terminal(repositorio)
+        commitar(hoje)
     return render_template("index.html")
 
 
